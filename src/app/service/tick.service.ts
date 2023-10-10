@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject, of } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 @Injectable()
 export class TickService {
   private tickCountSub: Subject<number> = new Subject();

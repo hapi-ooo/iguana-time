@@ -12,16 +12,18 @@ import { TickService } from './service/tick.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  TMP_res = ['r1', 'r2', 'r3', 'r4', 'r5', 'r6', 'r7', 'r8',]
   title = 'Iguana Time';
   guid: number = 0;
   item = { uid: 1, amount: 0 };
-  effects$: Observable<ReadonlyArray<Effect>> = this.store.select(selectEffects);
+  effects$: Observable<ReadonlyArray<Effect>> =
+    this.store.select(selectEffects);
 
   constructor(private store: Store, private tickService: TickService) {}
 
   ngOnInit(): void {
-    this.tickService.init().subscribe( d => {
-      console.log(`hi ${d}`);
+    this.tickService.init().subscribe( _ => {
+//      console.log(`hi ${d}`);
     });
 
     this.effects$.subscribe(effects => {
