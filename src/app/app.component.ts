@@ -12,7 +12,7 @@ import { TickService } from './service/tick.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  TMP_res = ['r1', 'r2', 'r3', 'r4', 'r5', 'r6', 'r7', 'r8',]
+  TMPres: string[] = ['r1', 'r2', 'r3', 'r4', 'r5', 'r6', 'r7', 'r8', 'r1', 'r2', 'r3', 'r4', 'r5', 'r6', 'r7', 'r8',]
   title = 'Iguana Time';
   guid: number = 0;
   item = { uid: 1, amount: 0 };

@@ -8,6 +8,7 @@ import { EffectsReducer } from './state/effects.reducers';
 import { AppComponent } from './app.component';
 import { Calendar } from './calendar/calendar.component';
 import { GridDemo } from './test.component';
+import { Menu } from './menu/menu.component';
 
 import { TickService } from './service/tick.service';
 import { CalendarService } from './service/calendar.service';
@@ -17,6 +18,7 @@ import { CalendarService } from './service/calendar.service';
     AppComponent,
     Calendar,
     GridDemo,
+    Menu,
   ],
   imports: [
     BrowserModule,
