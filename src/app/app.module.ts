@@ -9,9 +9,15 @@ import { AppComponent } from './app.component';
 import { Calendar } from './calendar/calendar.component';
 import { GridDemo } from './test.component';
 import { Menu } from './menu/menu.component';
+import { Resource } from './resource/resource.component';
 
 import { TickService } from './service/tick.service';
 import { CalendarService } from './service/calendar.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -19,13 +25,18 @@ import { CalendarService } from './service/calendar.service';
     Calendar,
     GridDemo,
     Menu,
+    Resource,
   ],
   imports: [
     BrowserModule,
     CommonModule,
     StoreModule.forRoot({
       effects: EffectsReducer,
-    })
+    }),
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatListModule,
+    MatDividerModule,
   ],
   providers: [
     TickService,

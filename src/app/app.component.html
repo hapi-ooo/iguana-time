@@ -1,27 +1,33 @@
-<!--
-<h1>{{title}}</h1>
-<button (click)="add()">Add</button>
-  <p>{{item.amount}}</p>
--->
-
-<div class='header'>
-  <calendar></calendar>
-</div>
-<div class='main-content-container'>
-  <div class='grid-child left'>
-    <menu [menuItems]="TMPres"></menu>
-  </div>
-  <div class='grid-child center-top'>
-    <!-- <p>iguana img here</p> -->
-    <img src="../assets/iguana.jpg" />
-  </div>
-  <div class='grid-child center-bottom'>
-    <p>shop</p>
-  </div>
-  <div class='grid-child right'>
-    <h3>MENU</h3>
-    <p>stats</p>
-    <p>iguana</p>
-    <p>events</p>
+<div class='app-container'>
+  <mat-card class='header'>
+    <calendar></calendar>
+  </mat-card>
+  <div class='main-content-container'>
+    <mat-card class='grid-child left'>
+      <mat-card-header class="resources-header">
+        <mat-card-title style="display: block;">Resources</mat-card-title>
+      </mat-card-header>
+      <div class='asdf'>
+        <resource [resource]="resourceTemp"></resource>
+      </div>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <mat-list-item *ngFor="let r of resources;">
+          <resource [resource]="r"></resource>
+        </mat-list-item>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class='grid-child center-top'>
+      <img src="../assets/iguana.jpg" />
+    </mat-card>
+    <mat-card class='grid-child center-bottom'>
+      <p>shop</p>
+    </mat-card>
+    <mat-card class='grid-child right'>
+      <h3>MENU</h3>
+      <p>stats</p>
+      <p>iguana</p>
+      <p>events</p>
+    </mat-card>
   </div>
 </div>

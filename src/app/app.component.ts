@@ -6,13 +6,17 @@ import { Observable } from 'rxjs';
 import { EffectsActions } from './state/effects.actions';
 import { TickService } from './service/tick.service';
 
+import { tempResources } from './data';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  TMPres: string[] = ['r1', 'r2', 'r3', 'r4', 'r5', 'r6', 'r7', 'r8', 'r1', 'r2', 'r3', 'r4', 'r5', 'r6', 'r7', 'r8',]
+  resources = tempResources;
+  resourceTemp = { name: 'Name', quantity: 'Quantity', capacity: 'Capacity' };
+  tmpResources = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
   title = 'Iguana Time';
   guid: number = 0;
   item = { uid: 1, amount: 0 };

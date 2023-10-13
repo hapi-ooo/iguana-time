@@ -1,0 +1,29 @@
+.resource-container {
+  margin-bottom: 2px;
+  width: 100%;
+  display: grid;
+  grid-template-columns:
+    [start]
+    30% [one]
+    30% [two]
+    auto [end];
+}
+
+p {
+  margin: 0;
+}
+
+.name {
+  grid-column: start / one;
+}
+
+.quantity{
+  grid-column: one / two;
+  text-align: right;
+}
+
+.capacity {
+  grid-column: two / end;
+  text-align: right;
+}
+
