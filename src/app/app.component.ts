@@ -5,16 +5,15 @@ import { Effect } from './types';
 import { Observable } from 'rxjs';
 import { EffectsActions } from './state/effects.actions';
 import { TickService } from './service/tick.service';
-
-import { tempResources } from './data';
+import { loremipsum } from './data';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  resources = tempResources;
+  lmim = loremipsum;
   resourceTemp = { name: 'Name', quantity: 'Quantity', capacity: 'Capacity' };
   displayTab = false;
   flipDisplayTab() { this.displayTab = !this.displayTab; console.log(this.displayTab); }

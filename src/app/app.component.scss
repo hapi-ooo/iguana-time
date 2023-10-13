@@ -1,3 +1,9 @@
+@use '../styles' as styles;
+
+.scrollable {
+  @include styles.scrollable(calc(100vh - 50px));
+}
+
 .app-container {
   width: 100%;
   height: 100%;
@@ -7,22 +13,24 @@
   gap: 8px;
 }
 
-
 .main-content-container {
-  padding: 0 8px 8px;
   flex-grow: 2;
   display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+
   grid-template-rows:
     [start]
     50% [center-line]
     auto [end];
+
   grid-template-columns:
     [start]
     25% [center-left]
     50% [center-right]
     auto [end];
-  column-gap: 10px;
-  row-gap: 10px;
+
+  padding: 0 8px 8px;
 }
 
 .resources-header {
@@ -33,7 +41,7 @@ mat-card-content {
   padding: 4px 12px 12px;
 }
 
-.asdf {
+.resource-headers {
   box-sizing: border-box;
   padding: 0 12px;
   width: 100%;
@@ -52,15 +60,9 @@ img {
   margin: auto;
 }
 
-.grid-child {
-  width: 100%;
-  display: flex;
-}
-
 .left {
   grid-column: start / center-left;
   grid-row: start / end;
-  padding: 8px;
 }
 
 .center-top {
@@ -84,9 +86,4 @@ button {
   padding: 3px;
   background-color: #eee;
   border: none;
-}
-
-button:hover {
-  background-color: #222;
-  color: #ddd;
 }

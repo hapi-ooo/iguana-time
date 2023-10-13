@@ -1,0 +1,9 @@
+/**
+  * Styles for ResourceList
+  */
+@use '../../styles' as styles;
+
+.resource-list-container {
+  @include styles.scrollable(calc(100vh - 50px));
+  border-radius: 4px;
+}

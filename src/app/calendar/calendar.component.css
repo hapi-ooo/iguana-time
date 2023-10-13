@@ -1,4 +1,7 @@
-p {
-  text-align: center;
-  margin: 8px 0;
+/**
+  * Styles for Calendar Component
+  */
+
+.calendar-container {
+  width: 80px;
 }

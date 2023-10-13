@@ -5,4 +5,10 @@ html, body {
   margin: 0;
   background-color: #73dd7e;
 }
+
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@mixin scrollable($max-height) {
+  overflow: auto;
+  max-height: $max-height;
+}

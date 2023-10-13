@@ -34,3 +34,9 @@ export interface Effect {
   targetUid: UID;
   size: number;
 };
+
+export interface ResourceT {
+  name: string;
+  quantity: number;
+  capacity: number;
+}

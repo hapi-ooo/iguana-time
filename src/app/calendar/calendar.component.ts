@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
 
 @Component({
   selector: 'calendar',
-  template: `<p>{{(calendarItem$ | async)?.season || ''}} {{(calendarItem$ | async)?.day || ''}}</p>`,
+  templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.css'],
 })
 export class Calendar implements OnInit {

@@ -7,9 +7,8 @@ import { EffectsReducer } from './state/effects.reducers';
 
 import { AppComponent } from './app.component';
 import { Calendar } from './calendar/calendar.component';
-import { GridDemo } from './test.component';
-import { Menu } from './menu/menu.component';
-import { Resource } from './resource/resource.component';
+import { ResourceList } from './resource/resource-list.component';
+import { Header } from './header/header.component';
 
 import { TickService } from './service/tick.service';
 import { CalendarService } from './service/calendar.service';
@@ -20,14 +19,15 @@ import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
     AppComponent,
     Calendar,
-    GridDemo,
-    Menu,
-    Resource,
+    ResourceList,
+    Header,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +41,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatDividerModule,
     MatTabsModule,
     MatButtonModule,
+    MatTableModule,
+    MatToolbarModule,
   ],
   providers: [
     TickService,
