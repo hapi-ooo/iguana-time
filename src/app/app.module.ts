@@ -18,6 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatCardModule,
     MatListModule,
     MatDividerModule,
+    MatTabsModule,
+    MatButtonModule,
   ],
   providers: [
     TickService,

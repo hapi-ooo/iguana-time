@@ -16,7 +16,9 @@ import { tempResources } from './data';
 export class AppComponent implements OnInit {
   resources = tempResources;
   resourceTemp = { name: 'Name', quantity: 'Quantity', capacity: 'Capacity' };
-  tmpResources = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+  displayTab = false;
+  flipDisplayTab() { this.displayTab = !this.displayTab; console.log(this.displayTab); }
+
   title = 'Iguana Time';
   guid: number = 0;
   item = { uid: 1, amount: 0 };

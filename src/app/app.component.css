@@ -66,6 +66,7 @@ img {
 .center-top {
   grid-column: center-left / center-right;
   grid-row: start / center-line;
+  border: solid 2x rgb(103, 58, 183);
 }
 
 .center-bottom {
