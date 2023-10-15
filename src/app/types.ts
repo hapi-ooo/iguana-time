@@ -35,6 +35,12 @@ export interface Effect {
   size: number;
 };
 
+export interface ShopItem {
+  name: string;
+  price: Effect[];
+  effects: Effect[];
+};
+
 export interface ResourceT {
   name: string;
   quantity: number;

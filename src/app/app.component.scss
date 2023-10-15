@@ -1,7 +1,7 @@
 @use '../styles' as styles;
 
 .scrollable {
-  @include styles.scrollable(calc(100vh - 50px));
+  @include styles.scrollable(calc(100vh - 78px));
 }
 
 .app-container {
@@ -31,6 +31,7 @@
     auto [end];
 
   padding: 0 8px 8px;
+  max-height: calc( 100vh - 78px);
 }
 
 .resources-header {
@@ -63,6 +64,7 @@ img {
 .left {
   grid-column: start / center-left;
   grid-row: start / end;
+  max-height: calc(100vh - 78px);
 }
 
 .center-top {
@@ -74,6 +76,7 @@ img {
 .center-bottom {
   grid-column: center-left / center-right;
   grid-row: center-line / end;
+  max-height: calc(50vh - 64px);
 }
 
 .right {

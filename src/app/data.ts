@@ -1,4 +1,130 @@
-import { ResourceT } from "./types";
+import { ResourceT, Effect, ShopItem } from "./types";
+
+const SAMPLE_EFFECTS: Effect[] = [
+  {
+    uid: 'bugs-1',
+    targetUid: 'bugs',
+    size: -20,
+  },
+  {
+    uid: 'sticks-1',
+    targetUid: 'sticks',
+    size: -60,
+  },
+  {
+    uid: 'bugs-2',
+    targetUid: 'bugs',
+    size: 20,
+  },
+  {
+    uid: 'spider-webs-1',
+    targetUid: 'spider webs',
+    size: -100,
+  },
+];
+
+export const SHOP_DATA: ShopItem[] = [
+  {
+    name: 'Item 1',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 2',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 3',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 4',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 5',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 6',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 7',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 8',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 9',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 10',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 11',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 12',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 13',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 14',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 15',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 16',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 17',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 18',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 19',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+  {
+    name: 'Item 20',
+    price: [ SAMPLE_EFFECTS[0] ],
+    effects: [ SAMPLE_EFFECTS[1] ],
+  },
+];
 
 export const RESOURCE_DATA: ResourceT[] = [
   {

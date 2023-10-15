@@ -1,0 +1,11 @@
+/**
+  * Styles for the Game Menu
+  */
+
+.menu-item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100px;
+}

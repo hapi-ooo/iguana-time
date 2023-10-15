@@ -1,0 +1,16 @@
+/**
+  * Styles for Shop Component
+  */
+@use '../../styles' as styles;
+
+.scrollable {
+  @include styles.scrollable(calc(50vh - 64px));
+}
+
+.shop-container {
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}

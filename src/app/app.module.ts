@@ -9,11 +9,13 @@ import { AppComponent } from './app.component';
 import { Calendar } from './calendar/calendar.component';
 import { ResourceList } from './resource/resource-list.component';
 import { Header } from './header/header.component';
+import { GameMenu } from './game-menu/game-menu.component';
+import { Shop } from './shop/shop.component';
 
 import { TickService } from './service/tick.service';
 import { CalendarService } from './service/calendar.service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
@@ -21,6 +23,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -28,6 +32,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     Calendar,
     ResourceList,
     Header,
+    GameMenu,
+    Shop,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +49,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatButtonModule,
     MatTableModule,
     MatToolbarModule,
+    MatMenuModule,
+    MatIconModule,
   ],
   providers: [
     TickService,

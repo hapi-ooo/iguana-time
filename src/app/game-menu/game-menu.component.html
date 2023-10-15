@@ -1,0 +1,13 @@
+  <button mat-icon-button
+    aria-label='Game settings menu'
+    [matMenuTriggerFor]='settingsmenu'>
+    <img src="{{assets + '/settings.svg'}}" />
+  </button>
+  <mat-menu #settingsmenu='matMenu'>
+    <button class='menu-item' style="padding: 0;" mat-menu-item>
+      <!--
+        <img src="{{assets + '/check.svg'}}" />
+      -->
+      <span>Good job!</span>
+    </button>
+  </mat-menu>
