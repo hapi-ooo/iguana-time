@@ -6,6 +6,7 @@ export class TickService {
 
   init(): Observable<number> {
     setInterval(() => {
+      // Update the observable
       this.tickCountSub.next(Date.now());
     }, 100);
     return this.tickCountSub.asObservable();

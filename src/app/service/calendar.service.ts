@@ -11,6 +11,7 @@ export class CalendarService {
   private calendarItemSub: Subject<CalendarItem> = new Subject();
 
   init(tickObservable: Observable<number>): Observable<CalendarItem> {
+    // Callback on observable update
     tickObservable.subscribe( _ => {
       this.calendarItemSub.next(
        this.incrementCalendarDay()

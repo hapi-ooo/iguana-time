@@ -4,6 +4,6 @@
 @use '../../styles' as styles;
 
 .resource-list-container {
-  @include styles.scrollable(calc(100vh - 79px));
+  @include styles.scrollable(calc(100vh - 78px));
   border-radius: 4px;
 }

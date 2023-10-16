@@ -4,7 +4,7 @@
 @use '../../styles' as styles;
 
 .scrollable {
-  @include styles.scrollable(calc(50vh - 64px));
+  @include styles.scrollable(calc(50vh - 124px));
 }
 
 .shop-container {
